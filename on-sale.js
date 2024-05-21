@@ -3,7 +3,7 @@ let boughtBikesStr = localStorage.getItem('boughtBikesStr');
 let boughtBikes = boughtBikesStr ? JSON.parse(boughtBikesStr) : {};
 
 // Запрос к серверу для получения списка байков
-fetch('http://localhost:8080/bikes', {
+fetch('https://f276-31-128-76-81.ngrok-free.app/bikes', {
     method: 'GET'
 }).then(response => response.json())
     .then(bikes => {

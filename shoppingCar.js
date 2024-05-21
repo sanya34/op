@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let boughtBikes = boughtBikesStr ? JSON.parse(boughtBikesStr) : {};
 
     // Получаем список байков с сервера
-    fetch('http://localhost:8080/bikes', {
+    fetch('https://f276-31-128-76-81.ngrok-free.app/bikes', {
         method: 'GET'
     })
         .then(response => response.json())

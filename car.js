@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isBought = params.isBought;
 
     // Отправляем запрос на сервер для получения данных байка
-    fetch(`http://localhost:8080/bikes/${bikeId}`)
+    fetch(`https://f276-31-128-76-81.ngrok-free.app/bikes/${bikeId}`)
         .then(response => response.json())
         .then(bike => {
             // Находим контейнер для деталей продукта

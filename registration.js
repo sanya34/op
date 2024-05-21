@@ -7,7 +7,7 @@ document.getElementById("registration-button").addEventListener("click",function
         password:document.getElementById("password").value
     }
 
-    fetch(`http://localhost:8080/users`,{
+    fetch(`https://f276-31-128-76-81.ngrok-free.app/users`,{
         method:"POST",
         headers: {
             'Content-Type': 'application/json'
