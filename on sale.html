@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTORBIKE</title>
+    <link rel="stylesheet"  href="style.css">.
+
+</head>
+
+<h1>MOTORBIKE</h1>
+<img src="https://i.postimg.cc/26Xp3NVL/pngtree-motorcycle-badge-and-logogood-for-print-png-image-323351.jpg" alt="фjnj" width="200" height="200">
+
+<h2 id="account-username"></h2>
+<body>
+<nav>
+
+    <button class="toggle-btn">&#9776;</button>
+    <a class="nav-link pc" href="info.html">Культура мотобайків</a>
+    <a class="nav-link pc" href="on sale.html">В продажі</a>
+    <a class="nav-link pc" href="securite.html">Безпека</a>
+    <a class="nav-link pc" href="shoppingCart.html">Корзина <span id="cart-count">0</span></a>
+
+
+    <div class="mobile-nav">
+        <br>
+        <a class="nav-link mb" href="info.html">Культура мотобайків</a>
+        <br>
+        <a class="nav-link mb" href="on sale.html">В продажі</a>
+        <br>
+        <a class="nav-link mb" href="securite.html">Безпека</a>
+        <br>
+        <a class="nav-link mb" href="shoppingCart.html">Корзина <span id="cart-count-mobile">0</span></a>
+        <br>
+    </div>
+
+</nav>
+<div class="container-bikes">
+</div>
+<script src="get-user-data.js"></script>
+<script src="buy.js"></script>
+<script src="nav-bar.js"></script>
+<script src="on-sale.js"></script>
+<script>
+    updateBoughtCount();
+</script>
+</body>
+</html>
+
