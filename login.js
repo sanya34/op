@@ -5,7 +5,7 @@ document.getElementById("login-button").addEventListener("click",function (e){
         password:document.getElementById("password").value,
     }
 
-    fetch(`https://f276-31-128-76-81.ngrok-free.app/users/login`,{
+    fetch(`https://b4d6-31-128-76-81.ngrok-free.app/users/login`,{
         method:"POST",
         headers: {
             'Content-Type': 'application/json'

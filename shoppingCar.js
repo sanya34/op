@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let boughtBikes = boughtBikesStr ? JSON.parse(boughtBikesStr) : {};
 
     // Получаем список байков с сервера
-    fetch('https://f276-31-128-76-81.ngrok-free.app/bikes', {
+    fetch('https://b4d6-31-128-76-81.ngrok-free.app/bikes', {
         method: 'GET',
         headers: new Headers({
             "ngrok-skip-browser-warning": "69420",
