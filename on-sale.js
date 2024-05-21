@@ -1,5 +1,5 @@
 // Получаем данные из localStorage
-let boughtBikesStr = localStorage.getItem('boughtBikesStr');
+let boughtBikesStr = localStorage.getItem(`boughtBikesStr.${userData.email}`);
 let boughtBikes = boughtBikesStr ? JSON.parse(boughtBikesStr) : {};
 
 // Запрос к серверу для получения списка байков
