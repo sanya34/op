@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Получаем список байков с сервера
     fetch('https://f276-31-128-76-81.ngrok-free.app/bikes', {
-        method: 'GET'
+        method: 'GET',
+        headers: new Headers({
+            "ngrok-skip-browser-warning": "69420",
+        })
     })
         .then(response => response.json())
         .then(bikes => {

@@ -4,7 +4,10 @@ let boughtBikes = boughtBikesStr ? JSON.parse(boughtBikesStr) : {};
 
 // Запрос к серверу для получения списка байков
 fetch('https://f276-31-128-76-81.ngrok-free.app/bikes', {
-    method: 'GET'
+    method: 'GET',
+    headers: new Headers({
+        "ngrok-skip-browser-warning": "69420",
+    })
 }).then(response => response.json())
     .then(bikes => {
         let containerBikes = document.querySelector('.container-bikes');

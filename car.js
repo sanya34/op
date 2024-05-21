@@ -17,7 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const isBought = params.isBought;
 
     // Отправляем запрос на сервер для получения данных байка
-    fetch(`https://f276-31-128-76-81.ngrok-free.app/bikes/${bikeId}`)
+    fetch(`https://f276-31-128-76-81.ngrok-free.app/bikes/${bikeId}`,{
+        method:"GET",
+        headers: new Headers({
+            "ngrok-skip-browser-warning": "69420",
+        })
+    })
         .then(response => response.json())
         .then(bike => {
             // Находим контейнер для деталей продукта
