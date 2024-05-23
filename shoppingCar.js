@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let boughtBikes = boughtBikesStr ? JSON.parse(boughtBikesStr) : {};
 
     // Получаем список байков с сервера
-    fetch('https://b4d6-31-128-76-81.ngrok-free.app/bikes', {
+    fetch('http://localhost:8080/bikes', {
         method: 'GET',
         headers: new Headers({
             "ngrok-skip-browser-warning": "69420",
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                      <button onclick="deleteBike(${bike.id})">Видалити з корзини</button>`;
 
                 bikeDiv.addEventListener('click', () => {
-                    window.location.href = `car.html?id=${bike.id}&isBought=true`;
+                    window.location.href = `bike.html?id=${bike.id}&isBought=true`;
                 });
 
                 containerBikes.appendChild(bikeDiv);

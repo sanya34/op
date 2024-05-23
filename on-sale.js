@@ -3,7 +3,7 @@ let boughtBikesStr = localStorage.getItem(`boughtBikesStr.${userData.email}`);
 let boughtBikes = boughtBikesStr ? JSON.parse(boughtBikesStr) : {};
 
 // Запрос к серверу для получения списка байков
-fetch('https://b4d6-31-128-76-81.ngrok-free.app/bikes', {
+fetch('http://localhost:8080/bikes', {
     method: 'GET',
     headers: new Headers({
         "ngrok-skip-browser-warning": "69420",
@@ -23,7 +23,7 @@ fetch('https://b4d6-31-128-76-81.ngrok-free.app/bikes', {
                 <img src="${bike.imageURL}" alt="${bike.name}">`;
 
             bikeDiv.addEventListener('click', () => {
-                let url = `car.html?id=${bike.id}`;
+                let url = `bike.html?id=${bike.id}`;
                 if (boughtBikes[bike.id]) {
                     url += '&isBought=true';
                 }
