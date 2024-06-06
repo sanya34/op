@@ -147,6 +147,7 @@ nav {
     padding: 10px;
 }
 .content-center {
+    display: flex;
     justify-content: center;
 }
 
