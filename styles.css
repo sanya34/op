@@ -51,7 +51,7 @@ h1, h2, h3, p {
 }
 
 @media screen and (max-width: 600px) {
-    .parallax .home_parallax .home_parallax-img2 {
+    .home_parallax-img2 {
         display: none;
     }
 }
