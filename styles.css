@@ -46,19 +46,19 @@ h1, h2, h3, p {
 
 
 .home_parallax-img1 {
-    background-image: url("Монтажная область 3.png");
+    background-image: url("Монтажная-область-3.avif");
     z-index: var(--z-normal);
 }
 
 
 .home_parallax-img2 {
-    background-image: url("Монтажная область 4.png");
+    background-image: url("Монтажная-область-4.avif");
     z-index: var(--z-tooltip);
 }
 
 
 .home_parallax-img3 {
-    background-image: url("Монтажная область 5.png");
+    background-image: url("Монтажная-область-5.avif");
     z-index: var(--z-fixed);
 }
 
