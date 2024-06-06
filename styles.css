@@ -50,7 +50,11 @@ h1, h2, h3, p {
     z-index: var(--z-normal);
 }
 
-
+@media screen and (max-width: 600px) {
+    .parallax .home_parallax .home_parallax-img2 {
+        display: none;
+    }
+}
 .home_parallax-img2 {
     background-image: url("Монтажная область 4.webp");
     z-index: var(--z-tooltip);
