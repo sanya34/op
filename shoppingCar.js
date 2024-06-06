@@ -6,9 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Получаем список байков с сервера
     fetch('http://localhost:8080/bikes', {
         method: 'GET',
-        headers: new Headers({
-            "ngrok-skip-browser-warning": "69420",
-        })
     })
         .then(response => response.json())
         .then(bikes => {
