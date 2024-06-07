@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://sanya34.github.io/op/home/Sitemap.xml
+Sitemap: https://sanya34.github.io/op/Sitemap.xml
